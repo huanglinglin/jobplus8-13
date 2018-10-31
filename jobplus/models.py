@@ -97,9 +97,9 @@ class Job(Base):
     #职位名称
     name = db.Column(db.String(21))
   #工资最低
-    salary_low = db.Column(db.Integer,nullable=False)
+    salary_low = db.Column(db.Integer)
     #工资最高
-    salary_high = db.Column(db.Integer,nullable=False)
+    salary_high = db.Column(db.Integer)
     #职位地址 在什么地方工作
     location = db.Column(db.String(24))
     description = db.Column(db.String(1500))
